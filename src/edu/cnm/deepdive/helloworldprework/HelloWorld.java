@@ -3,15 +3,11 @@ package edu.cnm.deepdive.helloworldprework;
 public class HelloWorld {
 
   public static void main(String[] args) {
-    salute(salutation(args));
-    }
+    emitMessage("Hello World, this is an emitted Message!");
+  }
 
-    private static String salutation(String [] args) {
-    return "Hello, " + ((args.length > 0) ? args[0] : "World");
-    }
-
-  private static void salute(String salutation) {
-    System.out.println(salutation);
+  private static void emitMessage(String message) {
+    System.out.println(message);
   }
 
 }
